@@ -1,7 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define the font face */
 @font-face {
   font-family: "Georgian-1";
-  src: url("./assets/fonts/bpg_arial_2009.ttf");
+  src: url("./assets/fonts/bpg_arial_2009.ttf") format('truetype'); /* specify the format */
+}
+
+@font-face {
+  font-family: 'userInfo';
+  src: url('./fonts/bpg_excelsior_caps_dejavu_2010.ttf');
+  font-weight: normal;
+  font-style: normal;
 }

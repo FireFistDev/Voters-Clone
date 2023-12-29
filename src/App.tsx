@@ -9,7 +9,7 @@ function App() {
     { personalNumber: "62502011017", surName: "ჭრელაშვილი" },
     { personalNumber: "12222", surName: "jorge" },
   ];
-  const [result, setResoult] = useState(false);
+  const [result, setResoult] = useState(true);
   const [personalNumber, setPersonalNumber] = useState<unknown>("");
 
   const [surName, setSurName] = useState<unknown>("");
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center  justify-center   w-[100vw] h-[100%]">
-      <div className="flex items-center justify-center flex-col gap-5 py-5  border-solid border-2 border-black">
+      <div className="flex items-center justify-center flex-col gap-5 py-5  border border-gray-400 rounded-sm">
         <img src={logo} />
         <h1 className="text-[#51BA78] text-center ">
           გადაამოწმეთ პირადი მონაცემები და მისამართი ამომრჩეველთა ერთიან სიაში
@@ -40,9 +40,11 @@ function App() {
       </div>
       {/* second line */}
       {/* inputs */}
-      <p className="text-[11px] mt-20">(01.11.2023 მდგომარეობით)</p>
-      <div className="w-[100%] items-center justify-center flex py-20 ">
+
+      <div className="w-[100%] mt-10 items-center justify-center flex py-20 border border-gray-400 rounded-sm ">
         <div className="w-[100%] items-center justify-around gap-10 flex flex-col">
+        <p className="text-[11px] ">(01.11.2023 მდგომარეობით)</p>
+
           <input
             type="text"
             onChange={(e) => {
@@ -51,16 +53,19 @@ function App() {
             placeholder="პირადი ნომერი"
             className="w-[50%] h-[3rem] max_sm8:w-[90%] outline outline-2 outline-[#51BA78] rounded-[1px] px-3"
           />
+
           <input
             type="text"
             onChange={(e) => setSurName(e.target.value)}
             placeholder="გვარი"
             className="w-[50%] h-[3rem] max_sm8:w-[90%] outline outline-2 outline-[#51BA78] rounded-[1px]  px-3"
           />
+
           <ReCAPTCHA
             className="w-[50%] h-[3rem] max_sm8:w-[90%]"
             sitekey="6Lf8jD8pAAAAAM4Y91zujTDtljDpSBA3wKYBTzRN"
           />
+
           <button
             onClick={handleClick}
             className="w-[50%] h-[3rem] max_sm8:w-[90%]  text-white  font-bold bg-[#51BA78] rounded-[1px] hover:bg-gray-800"
@@ -73,10 +78,10 @@ function App() {
       {result && <Card />}
 
       {result && (
-        <div className="">
-          <button className="w-[50%] h-[3rem] max_sm8:w-[50%] my-5 text-white  font-bold bg-[#51BA78] rounded-[3px] hover:bg-gray-800">
-            ამ მისამართზე
-          </button>
+        <div className=" my-5 flex-col gap-10">
+ <button className="h-[3rem] my-5 ml-20 text-white font-bold bg-[#51BA78] rounded-[3px]">
+    ამ მისამართზე
+  </button>
           <h1>© საქართველოს საარჩევნო ადმინისტრაცია</h1>
         </div>
       )}
