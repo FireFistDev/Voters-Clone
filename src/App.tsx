@@ -8,7 +8,7 @@ function App() {
   const dummyData = [
     { personalNumber: "62502011017", surName: "ბუსკივაძე" },
   ];
-  const [result, setResoult] = useState(true);
+  const [result, setResoult] = useState(false);
   const [personalNumber, setPersonalNumber] = useState<unknown>("");
 
   const [surName, setSurName] = useState<unknown>("");
