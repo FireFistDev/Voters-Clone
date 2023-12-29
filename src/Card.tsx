@@ -3,34 +3,34 @@ import { FaLocationDot } from "react-icons/fa6";
 import './index.css'
 const Card = () => {
   return (
-    <div  className="w-[80%] mt-10 bg-[#eee] font-main outline-1">
+    <div style={{fontFamily:'userinfo'}} className="w-[80%] mt-10 bg-[#eee] font-main outline-1">
       <div className="flex p-3 py-5">
-        <span className="w-1/2">სურათი</span>
+        <span className="w-1/2">suraTi</span>
         <img src={pcitrue} className="h-[150px]" />
       </div>
       <div className="flex p-3 py-5">
-        <span className="w-1/2">გვარი</span>
-        <span className="">ბუსკივაძე</span>
+        <span className="w-1/2">gvari</span>
+        <span className="">buskivaZe</span>
       </div>
       <div className="flex p-3 py-5">
-        <span className="w-1/2">სახელი</span>
-        <span className="">დათო</span>
+        <span className="w-1/2">saxeli</span>
+        <span className="">daTo</span>
       </div>
       <div className="flex p-3 py-5">
-        <span className="w-1/2">დაბ.თარიღიaaaa</span>
+        <span className="w-1/2">dab.TariRi</span>
         <span className="">10.03.2005</span>
       </div>
       <div className="flex p-3 py-5">
-        <span className="w-1/2">ოლქი/უბანი</span>
+        <span className="w-1/2">olqi/ubani</span>
         <span className="border-solid border-2 border-black p-3 text-green-500 flex gap-2"> <FaLocationDot/> 07.13</span>
       </div>
       <div className="flex p-3 py-5">
-        <span className="w-1/2">მისამართი</span>
-        <span className="">ოჩამჩირე ს. კოჩარა</span>
+        <span className="w-1/2">misamarti</span>
+        <span className="">oCamCire sof.kaCara</span>
       </div>
       <div className="flex p-3 py-5">
-        <span className="w-1/2">ფაქტ. საცხოვრებელი</span>
-        <span className="">თბილისი ისანი</span>
+        <span className="w-1/2">faqt.sacxovrebeli</span>
+        <span className="">Tbilisi isani</span>
       </div>
       {/* <div className="flex  py-3">
         <span>სურათი</span>

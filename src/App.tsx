@@ -6,8 +6,7 @@ import Card from "./Card";
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const dummyData = [
-    { personalNumber: "62502011017", surName: "ჭრელაშვილი" },
-    { personalNumber: "12222", surName: "jorge" },
+    { personalNumber: "62502011017", surName: "ბუსკივაძე" },
   ];
   const [result, setResoult] = useState(true);
   const [personalNumber, setPersonalNumber] = useState<unknown>("");
