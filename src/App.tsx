@@ -6,9 +6,29 @@ import Card from "./Card";
 // #51BA78
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const dummyData = [{ personalNumber: "62502011017", surName: "ბუსკივაძე" }];
+  const dummyData = [
+    {
+      personalNumber: "62502011017",
+      surName: "ბუსკივაძე",
+      name: "დათო",
+      birthDay: "10.03.2005",
+      banlue: "05.46",
+      address: "ოჩამჩირე ს.კოჩარა",
+      living: " თბილისი ისანი  შ.ნადირაშვილის ქ .N   34(დირსი - კორუპუსი )  N 17",
+    },
+    {
+      personalNumber: "01601109807",
+      surName: "ხარაიძე",
+      name: "ცოტნე",
+      birthDay: "13.07.2005",
+      banlue: "10.50",
+      address: "საქართველოს, ქალაქ თბილისის  გლდანის მასივი  3 მიკრო კორპუსი 2 ბინა 53  ",
+      living: "",
+    },
+  ];
   const targetRef: RefObject<HTMLDivElement> = useRef(null);
   const [result, setResoult] = useState(false);
+  const [data, setData] = useState({});
   const [personalNumber, setPersonalNumber] = useState<unknown>("");
 
   const [surName, setSurName] = useState<unknown>("");
@@ -19,10 +39,8 @@ function App() {
     );
 
     if (data) {
-      setResoult(true);
-      if (targetRef.current) {
-        targetRef.current.scrollIntoView({ behavior: "smooth" });
-      }
+      setResoult(true)
+      setData(data);
     }
 
     return;
@@ -77,7 +95,7 @@ function App() {
         </div>
       </div>
 
-      {result && <Card />}
+      {result && <Card info={data}/>}
 
       {result && (
         <div className=" my-5 flex-col gap-10">
