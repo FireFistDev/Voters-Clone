@@ -1,13 +1,18 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useRef, RefObject } from "react";
 
 import ReCAPTCHA from "react-google-recaptcha";
 import logo from "./assets/logos/logo.webp";
 import Card from "./Card";
+import picture1 from  "./assets/picture.jpg"
+import picture2 from  "./assets/picute2.jpg"
+
 // #51BA78
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const dummyData = [
     {
+      picture :picture1,
       personalNumber: "62502011017",
       surName: "ბუსკივაძე",
       name: "დათო",
@@ -17,6 +22,16 @@ function App() {
       living: " თბილისი ისანი  შ.ნადირაშვილის ქ .N   34(დირსი - კორუპუსი )  N 17",
     },
     {
+      picture :picture2,
+      personalNumber: "01317061282",
+      surName: "იაგანაშვილი",
+      name: "საბა",
+      birthDay: "10.03.2005",
+      banlue: "11.08.2005",
+      address: "თბილისი სიმონ ჯანაშიას ქ. N 10	",
+    },
+    {
+      picture :picture1,
       personalNumber: "01905046158",
       surName: "სხირტლაძე",
       name: "ნიკოლოზი",
@@ -26,6 +41,7 @@ function App() {
       living: " თბილისი ისანი  შ.ნადირაშვილის ქ .N   34(დირსი - კორუპუსი )  N 17",
     },
     {
+      picture :picture1,
       personalNumber: "01601109807",
       surName: "ხარაიძე",
       name: "ცოტნე",

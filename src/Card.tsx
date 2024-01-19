@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import pcitrue from "./assets/picture.jpg";
+
 import { FaLocationDot } from "react-icons/fa6";
 import './index.css'
 const Card = ({info}: any) => {
@@ -10,7 +10,7 @@ const Card = ({info}: any) => {
     ">
       <div className="flex p-3 py-5">
         <span className="w-1/2">სურათი</span>
-        <img src={pcitrue} className="h-[150px]" />
+        <img src={info.picture} className="h-[150px]" />
       </div>
       <div className="flex p-3 py-5">
         <span className="w-1/2">გვარი</span>
