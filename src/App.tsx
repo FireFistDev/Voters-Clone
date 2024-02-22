@@ -6,11 +6,22 @@ import logo from "./assets/logos/logo.webp";
 import Card from "./Card";
 import picture1 from  "./assets/picture.jpg"
 import picture2 from  "./assets/picute2.jpg"
+import picture3 from  "./assets/picture3.jpg"
 
 // #51BA78
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const dummyData = [
+    {
+      picture :picture3,
+      personalNumber: "01301121627",
+      surName: "ოლქიაშვილი",
+      name: "გიორგი",
+      birthDay: "30.08.2005",
+      banlue: "09.49",
+      address: "ოჩამჩირე ს.კოჩარა",
+      living: " საქართველო, ქალაქი თბილისი, ზღვისუბნის დასახლება, III მიკრო/რაიონი, I კვარტალი, კორპუსი 10, ბინა 33",
+    },
     {
       picture :picture1,
       personalNumber: "62502011017",
