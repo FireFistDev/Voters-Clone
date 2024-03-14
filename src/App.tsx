@@ -7,11 +7,21 @@ import Card from "./Card";
 import picture1 from  "./assets/picture.jpg"
 import picture2 from  "./assets/picute2.jpg"
 import picture3 from  "./assets/picture3.jpg"
-
+import picture5 from './assets/picture5.jpg'
 // #51BA78
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const dummyData = [
+    {
+      picture :picture5,
+      personalNumber: "01017051715",
+      surName: "სხირტლაძე",
+      name: "ალექსანდრე",
+      birthDay: "31.03.2001",
+      banlue: "01.09",
+      address: "თბილისი ვასილ ბარნოვის I ჩიხი N 6	",
+      living: "",
+    },
     {
       picture :picture3,
       personalNumber: "01301121627",
