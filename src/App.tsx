@@ -26,10 +26,10 @@ function App() {
     {
       picture :picture7,
       personalNumber: "01905047306",
-      surName: "გაფრინდაშვი",
+      surName: "გაფრინდაშვილი",
       name: "გიორგი",
-      birthDay: "31.03.2001",
-      banlue: "01.09",
+      birthDay: "27.11.2004",
+      banlue: "07.10",
       address: "საქართველო, ქალაქი თბილისი, გიორგი ჩიტაიას ქუჩა, N 33(ყოფ. საბჭოს)",
       living: "",
     },
