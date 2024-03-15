@@ -8,7 +8,8 @@ import picture1 from  "./assets/picture.jpg"
 import picture2 from  "./assets/picute2.jpg"
 import picture3 from  "./assets/picture3.jpg"
 import picture5 from './assets/picture5.jpg'
-// #51BA78
+import picture6 from './assets/picture6.jpg'
+import picture7 from './assets/picture7.jpg'// #51BA78
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const dummyData = [
@@ -20,6 +21,26 @@ function App() {
       birthDay: "31.03.2001",
       banlue: "01.09",
       address: "თბილისი ვასილ ბარნოვის I ჩიხი N 6	",
+      living: "",
+    },
+    {
+      picture :picture7,
+      personalNumber: "01905047306",
+      surName: "გაფრინდაშვი",
+      name: "გიორგი",
+      birthDay: "31.03.2001",
+      banlue: "01.09",
+      address: "საქართველო, ქალაქი თბილისი, გიორგი ჩიტაიას ქუჩა, N 33(ყოფ. საბჭოს)",
+      living: "",
+    },
+    {
+      picture :picture6,
+      personalNumber: "03501023168",
+      surName: "მჭედლიძე",
+      name: "ლუკა",
+      birthDay: "18.11.2005",
+      banlue: "01.09",
+      address: "თბილისი ვაკე შ.ნუცუბიძის ქ. N 56 (საქშახტმშენის ს)	",
       living: "",
     },
     {
@@ -114,7 +135,7 @@ function App() {
           <input
             type="text"
             onChange={(e) => {
-              setPersonalNumber(e.target.value);
+              setPersonalNumber(e.target.value.trim());
             }}
             placeholder="პირადი ნომერი"
             className="w-[50%] h-[3rem] max_sm8:w-[90%] outline outline-2 outline-[#51BA78] rounded-[1px] px-3"
@@ -122,7 +143,7 @@ function App() {
 
           <input
             type="text"
-            onChange={(e) => setSurName(e.target.value)}
+            onChange={(e) => setSurName(e.target.value.trim())}
             placeholder="გვარი"
             className="w-[50%] h-[3rem] max_sm8:w-[90%] outline outline-2 outline-[#51BA78] rounded-[1px]  px-3"
           />
