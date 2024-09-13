@@ -16,7 +16,7 @@ function App() {
   const dummyData = [
     {
       picture :picture10,
-      personalNumber: "01017051715",
+      personalNumber: "01353001864",
       surName: "შარტავა",
       name: "პროკოფი",
       birthDay: "13.05.2006",
