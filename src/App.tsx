@@ -10,9 +10,20 @@ import picture3 from  "./assets/picture3.jpg"
 import picture5 from './assets/picture5.jpg'
 import picture6 from './assets/picture6.jpg'
 import picture7 from './assets/picture7.jpg'// #51BA78
+import picture10 from './assets/picture10.jpg'
 function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const dummyData = [
+    {
+      picture :picture10,
+      personalNumber: "01017051715",
+      surName: "შარტავა",
+      name: "პროკოფი",
+      birthDay: "13.05.2006",
+      banlue: "05.57",
+      address: "გალი ს. პირველი გალი",
+      living: "თბილისი ისანი შ.ნადირაშვილის ქ. N 22 (დირსი - კორპუსი N21)",
+    },
     {
       picture :picture5,
       personalNumber: "01017051715",
@@ -150,7 +161,7 @@ function App() {
 
           <ReCAPTCHA
             className="w-[50%] h-[3rem] max_sm8:w-[90%]"
-            sitekey="6Lf8jD8pAAAAAM4Y91zujTDtljDpSBA3wKYBTzRN"
+            sitekey="6LfOd0EqAAAAAJBWiB3vZ6PJTAI9kdxmIpQr6jQz"
           />
 
           <button
